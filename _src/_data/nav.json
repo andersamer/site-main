@@ -1,0 +1,16 @@
+{
+    "items": [
+        {
+            "url": "/",
+            "name": "Home"
+        },
+        {
+            "url": "/about/",
+            "name": "About"
+        },
+        {
+            "url": "/blog/",
+            "name": "Blog"
+        }
+    ]
+}

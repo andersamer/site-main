@@ -8,15 +8,13 @@
 </head>
 <body>
     <header>
-        <h1>andersamer.com  - Home</h1>
+        <h1>andersamer.com  - Third Blog Post</h1>
         <h3>My little internet cottage.</h3>
     </header>
     <nav>
         <ul>
             
                 <li><a href="/"
-                    
-                        aria-current="page" data-state="active"
                     
                     >Home</a>
                 </li>
@@ -34,8 +32,12 @@
         </ul>
     </nav>
     <main>
-        <h1>Hello world!</h1>
-<p>This is a site!</p>
+        
+<article>
+    <h2>Third Blog Post</h2>
+<p><strong>:)</strong></p>
+
+</article>
 
     </main>
     <footer>
