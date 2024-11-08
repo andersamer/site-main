@@ -1,17 +1,29 @@
 export default function (eleventyConfig) {
 
+    // Add some additional watch targets
+    eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpeg}");
+    eleventyConfig.addWatchTarget("public/*");
+
+    // Make a passthrough copy of the public/ directory
+    eleventyConfig.addPassthroughCopy("public");
+
+    // Allow for missing extensions11
+    eleventyConfig.configureErrorReporting({ allowMissingExtensions: true });
+
+    // CSS Bundle
+    eleventyConfig.addBundle("css");
+
     // Current year shortcode (Usage: {% currentYear %})
     eleventyConfig.addShortcode("currentYear", () => `${new Date().getFullYear()}`);
-
-    // Allow for missing extensions
-    eleventyConfig.configureErrorReporting({ allowMissingExtensions: true });
 
     // Set default input and output directories
     return {
         dir: {
-            input: "_src",   // Directory containing source files
-            output: "_site", // Build location
-        }
+            input: "content",          // default: "."
+            includes: "../_includes",  // default: "_includes" (`input` relative)
+            data: "../_data",          // default: "_data" (`input` relative)
+            output: "_site"
+        },
     };
-
+    
 }

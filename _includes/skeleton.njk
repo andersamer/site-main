@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ site.name }}</title>
+    {%- css %}{% include "public/css/common.css" %}{% endcss %}
+    {% if stylesheet %}
+        {%- css %}{% include stylesheet %}{% endcss %}
+    {% else %}
+        {%- css %}{% include "public/css/index.css" %}{% endcss %}
+    {% endif %}
+    <style>{% getBundle "css" %}</style>
+</head>
+<body>
+    
+    {{ content | safe }}
+    
+</body>
+</html>

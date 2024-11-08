@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>andersamer.com</title>
-    
-    
-    <style>/* TODO: Get these fonts locally so you don't have to fetch them from Google */
+/* TODO: Get these fonts locally so you don't have to fetch them from Google */
 @import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
 
 :root {
@@ -85,47 +76,3 @@ a:visited {
 a:hover {
     color: var(--link-hover-color);
 }
-body {
-    margin: 5.5rem auto;
-    padding: 0 1rem;
-    max-width: 40rem;
-}</style>
-</head>
-<body>
-    
-    
-<header>
-    <h1>andersamer.com
-         - About
-        
-    </h1>
-    <h3>My little internet cottage.</h3>
-</header>
-    <nav>
-        <ul>
-            
-                <li>
-                    <a href="/">Home</a>
-                </li>
-            
-                <li>
-                    <a href="/about/" aria-current="page" data-state="active">About</a>
-                </li>
-            
-                <li>
-                    <a href="/blog/">Blog</a>
-                </li>
-            
-        </ul>
-    </nav>
-    <main>
-        <h1>All about me</h1>
-<p>I am <strong>cooool</strong>!</p>
-
-    </main>
-<footer>
-    <p>&copy; 2024 andersamer.com</p>
-</footer>
-    
-</body>
-</html>

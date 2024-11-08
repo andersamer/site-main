@@ -1,0 +1,30 @@
+---
+layout: skeleton
+---
+
+<header>
+    <h1>{{ site.name }}
+        {% if title %} - {{ title }}
+        {% endif %}
+    </h1>
+    <h3>{{ site.description }}</h3>
+</header>
+    <nav>
+        <ul>
+            {% for item in nav.items %}
+                <li>
+                    <a href="{{ item.url }}"
+                        {% if item.url == page.url %}
+                            aria-current="page" data-state="active"
+                        {% endif %}
+                        >{{ item.name }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+    <main>
+        {{ content | safe }}
+    </main>
+<footer>
+    <p>&copy; {% currentYear %} andersamer.com</p>
+</footer>
