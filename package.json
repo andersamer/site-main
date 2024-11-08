@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
   	"build": "npx @11ty/eleventy",
-  	"serve": "npx @11ty/eleventy --serve --port=20081"
+  	"serve": "npx @11ty/eleventy --serve --port=20081",
+    "clean": "rm -rf ./_site"
   },
   "keywords": [],
   "author": "",
