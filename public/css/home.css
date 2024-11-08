@@ -10,7 +10,6 @@ main {
     max-width: 30rem;
     width: 100%;
     text-align: center;
-    /* border: var(--border-default); */
     margin: auto;
     margin-bottom: 50vh;
     padding: 1rem;

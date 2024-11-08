@@ -7,7 +7,47 @@
     <title>andersamer.com</title>
     
     
-    <style>/* TODO: Get these fonts locally so you don't have to fetch them from Google */
+    <style>.cardWrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: var(--border-default);
+    border-radius: 0.2rem;
+    width: 16.89rem;
+    word-wrap: break-word;
+    text-overflow: hidden;
+    box-shadow: none;
+}
+
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding: 0 1rem 0 1rem;
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+.card:hover {
+    /* box-shadow: var(--shadow-color); */
+    box-shadow: black;
+}
+
+.card:hover > .card-content > h3 {
+    color: var(--link-color);
+    text-decoration: underline;
+}
+/* TODO: Get these fonts locally so you don't have to fetch them from Google */
 @import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
 
 :root {
@@ -104,7 +144,7 @@ body {
     
 <header>
     
-        <h1>Third Blog Post</h1>
+        <h1>Projects</h1>
     
 </header>
 <nav>
@@ -140,11 +180,32 @@ body {
 </nav>
 <main>  
     
-<article>
-    <h2>Third Blog Post</h2>
-<p><strong>:)</strong></p>
 
-</article>
+
+<div class="cardWrapper">
+    
+        <div class="card">
+            <a class="card-content" href="https://github.com/andersamer/cloudflare-autoDUC" target="_blank">
+                <h3>cloudflare-autoDUC</h3>
+                <p>A script that acts as an automatic DNS Update Client for Cloudflare DNS.</p>
+            </a>
+        </div>
+    
+        <div class="card">
+            <a class="card-content" href="https://github.com/andersamer/barf-backup" target="_blank">
+                <h3>barf-backup</h3>
+                <p>A script that stages and commits changes to a git repo of your choice.</p>
+            </a>
+        </div>
+    
+        <div class="card">
+            <a class="card-content" href="https://github.com/andersamer/yourweather" target="_blank">
+                <h3>yourweather</h3>
+                <p>A simple implementation of OpenWeather&#39;s API from a few years back.</p>
+            </a>
+        </div>
+    
+</div>
 
 </main>
 <footer>

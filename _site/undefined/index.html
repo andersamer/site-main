@@ -11,15 +11,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
 
 :root {
-    /* --font-family: Inter, Arial, Helvetica, sans-serif; */
-    --font-family: Arial, Helvetica, sans-serif;
+    --font-family: Inter, A1rial, Helvetica, sans-serif;
+    /* --font-family: Arial; */
     --font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
-    --font-scale: 0.85rem;
-    --line-height: 1.5;
     /* Maybe disable user-select? */
-    -webkit-user-select: none;
+    /* -webkit-user-select: none;
     -ms-user-select: none;
-    user-select: none;
+    user-select: none;*/
 }
 
 :root {
@@ -34,24 +32,25 @@
     --link-hover-color: #0097c5;
     --user-select-fg-color: white;
     --user-select-bg-color: black;
+
 }
 
 
-/* @media (prefers-color-scheme: dark) {
-    :root {
-        --text-primary: white;
-        --bg-primary: #282828;
-        --border-default-color: #a1a1a1;
-        --border-default: 1px solid var(--border-default-color);
-        --icon-color: white;
-        --accent: #31a2c5;
-        --shadow-color: rgba(255, 255, 255, 0.45) 0px 1px 4px;
-        --link-color: #0097c5;
-        --link-hover-color: #60b0c9;
-        --user-select-fg-color: black;
-        --user-select-bg-color: white;
-    }
-} */
+    /* @media (prefers-color-scheme: dark) {
+        :root {
+            --text-primary: white;
+            --bg-primary: #282828;
+            --border-default-color: #a1a1a1;
+            --border-default: 1px solid var(--border-default-color);
+            --icon-color: white;
+            --accent: #31a2c5;
+            --shadow-color: rgba(255, 255, 255, 0.45) 0px 1px 4px;
+            --link-color: #0097c5;
+            --link-hover-color: #60b0c9;
+            --user-select-fg-color: black;
+            --user-select-bg-color: white;
+        }
+    } */
 
 @view-transition {
     navigation: auto;
@@ -70,14 +69,15 @@
 
 body {
     background-color: var(--bg-primary);
-    font-family: var(--font-family);
     color: var(--text-primary);
+    font-family: Inter, Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    line-height: var(--line-height);
-    font-size: var(--font-scale);
+    line-height: 1.5;
+    font-size: 0.85rem;
 }
 
-a, a:visited {
+a,
+a:visited {
     text-decoration: dotted underline 1px;
     color: var(--link-color);
 }
@@ -85,26 +85,16 @@ a, a:visited {
 a:hover {
     color: var(--link-hover-color);
 }
-
-h1, h2, h3 {
-    margin-bottom: 0.3rem;
-}
-
-p {
-    margin-top: 0;
-}
 body {
-    margin: 7.5rem auto auto auto;
+    margin: 5.5rem auto;
     padding: 0 1rem;
-    max-width: 37rem;
+    max-width: 40rem;
 }</style>
 </head>
 <body>
     
     
 <header>
-    
-        <h1>Third Blog Post</h1>
     
 </header>
 <nav>
@@ -135,17 +125,9 @@ body {
         
     
 
-<br>
-<br>
 </nav>
 <main>  
     
-<article>
-    <h2>Third Blog Post</h2>
-<p><strong>:)</strong></p>
-
-</article>
-
 </main>
 <footer>
     <p>&copy; 2024 andersamer.com</p>

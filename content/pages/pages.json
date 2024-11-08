@@ -1,5 +1,4 @@
 {
     "layout": "base",
-    "permalink": "/{{title | slug}}/",
-    "stylesheet": "public/css/index.css"
+    "permalink": "/{{title | slug}}/"
 }

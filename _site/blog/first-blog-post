@@ -11,13 +11,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
 
 :root {
-    --font-family: Inter, A1rial, Helvetica, sans-serif;
-    /* --font-family: Arial; */
+    /* --font-family: Inter, Arial, Helvetica, sans-serif; */
+    --font-family: Arial, Helvetica, sans-serif;
     --font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+    --font-scale: 0.85rem;
+    --line-height: 1.5;
     /* Maybe disable user-select? */
-    /* -webkit-user-select: none;
+    -webkit-user-select: none;
     -ms-user-select: none;
-    user-select: none;*/
+    user-select: none;
 }
 
 :root {
@@ -32,11 +34,10 @@
     --link-hover-color: #0097c5;
     --user-select-fg-color: white;
     --user-select-bg-color: black;
-
 }
 
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root {
         --text-primary: white;
         --bg-primary: #282828;
@@ -50,7 +51,7 @@
         --user-select-fg-color: black;
         --user-select-bg-color: white;
     }
-}
+} */
 
 @view-transition {
     navigation: auto;
@@ -69,15 +70,14 @@
 
 body {
     background-color: var(--bg-primary);
+    font-family: var(--font-family);
     color: var(--text-primary);
-    font-family: Inter, Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    line-height: 1.5;
-    font-size: 0.85rem;
+    line-height: var(--line-height);
+    font-size: var(--font-scale);
 }
 
-a,
-a:visited {
+a, a:visited {
     text-decoration: dotted underline 1px;
     color: var(--link-color);
 }
@@ -85,47 +85,61 @@ a:visited {
 a:hover {
     color: var(--link-hover-color);
 }
+
+h1, h2, h3 {
+    margin-bottom: 0.3rem;
+}
+
+p {
+    margin-top: 0;
+}
 body {
-    margin: 5.5rem auto;
+    margin: 7.5rem auto auto auto;
     padding: 0 1rem;
-    max-width: 40rem;
+    max-width: 37rem;
 }</style>
 </head>
 <body>
     
     
 <header>
-    <h1>andersamer.com
-         - First Blog Post
-        
-    </h1>
-    <h3>My little internet cottage.</h3>
+    
+        <h1>First Blog Post</h1>
+    
 </header>
-    <nav>
-        <ul>
-            
-                <li>
-                    <a href="/"
-                        
-                        >Home</a>
-                </li>
-            
-                <li>
-                    <a href="/about/"
-                        
-                        >About</a>
-                </li>
-            
-                <li>
-                    <a href="/blog/"
-                        
-                        >Blog</a>
-                </li>
-            
-        </ul>
-    </nav>
-    <main>
+<nav>
+    
+    
+        <a href="/">Home</a>
         
+            <span> | </span>
+        
+    
+
+    
+        <a href="/about/">About</a>
+        
+            <span> | </span>
+        
+    
+
+    
+        <a href="/blog/">Blog</a>
+        
+            <span> | </span>
+        
+    
+
+    
+        <a href="/projects/">Projects</a>
+        
+    
+
+<br>
+<br>
+</nav>
+<main>  
+    
 <article>
     <h2>First Blog Post</h2>
 <p>“What is a poet? An unhappy man who hides deep anguish in his heart, but whose lips are so formed that when the sigh and cry pass through them, it sounds like lovely music.... And people flock around the poet and say: 'Sing again soon' - that is, 'May new sufferings torment your soul but your lips be fashioned as before, for the cry would only frighten us, but the music, that is blissful.” - Søren Kierkegaard</p>
@@ -133,7 +147,7 @@ body {
 
 </article>
 
-    </main>
+</main>
 <footer>
     <p>&copy; 2024 andersamer.com</p>
 </footer>

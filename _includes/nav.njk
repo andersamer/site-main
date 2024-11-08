@@ -1,0 +1,10 @@
+{% for item in nav.items %}
+    {% if not (page.url == "/" and item.name == "Home") %}
+        <a href="{{ item.url }}">{{ item.name }}</a>
+        {% if not loop.last %}
+            <span> | </span>
+        {% endif %}
+    {% endif %}
+{% endfor %}
+<br>
+<br>

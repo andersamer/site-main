@@ -8,8 +8,5 @@ stylesheet: "public/css/home.css"
 <main>
     <h1>andersamer.com</h1>
     <p>Welcome to my website.</p>
-    {% for item in nav.items %}
-        {% if not loop.first %}<a href="{{ item.url }}">{{ item.name }}</a>{% endif %}
-        {% if not loop.last and not loop.first%}<span> | </span>{% endif %}
-    {% endfor %}
+    {% include "nav.njk" %}
 </main>
