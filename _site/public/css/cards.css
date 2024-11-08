@@ -15,7 +15,6 @@
     width: 16.89rem;
     word-wrap: break-word;
     text-overflow: hidden;
-    box-shadow: none;
 }
 
 .card .card-content {
@@ -30,8 +29,7 @@
 }
 
 .card:hover {
-    /* box-shadow: var(--shadow-color); */
-    box-shadow: black;
+    box-shadow: var(--shadow-color);
 }
 
 .card:hover > .card-content > h3 {
