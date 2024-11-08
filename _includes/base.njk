@@ -6,13 +6,15 @@ layout: skeleton
     {% if title %}
         <h1>{{ title }}</h1>
     {% endif %}
+    <nav>
+        {% include "nav.njk" %}
+    </nav>
 </header>
-<nav>
-    {% include "nav.njk" %}
-</nav>
-<main>  
+<main>
     {{ content | safe }}
 </main>
 <footer>
+    {# <br> #}
+    <hr>
     <p>&copy; {% currentYear %} andersamer.com</p>
 </footer>
