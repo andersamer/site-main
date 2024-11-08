@@ -2,6 +2,4 @@
 title: "About"
 ---
 
-# All about me
-
-I am **cooool**!
+This site is still under construction. Thank you for your patience.

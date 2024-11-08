@@ -45,16 +45,15 @@
     color: var(--link-color);
     text-decoration: underline;
 }
-/* TODO: Get these fonts locally so you don't have to fetch them from Google */
 @import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
 
 :root {
-    /* --font-family: Inter, Arial, Helvetica, sans-serif; */
     --font-family: Arial, Helvetica, sans-serif;
     --font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
     --font-scale: 0.85rem;
     --line-height: 1.5;
-    /* Maybe disable user-select? */
+
+    /* Disable user-select */
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -91,17 +90,19 @@
     }
 } */
 
+/* Apply an animation between page navigation */
 @view-transition {
     navigation: auto;
 }
 
-::-moz-selection {
-    /* Code for Firefox */
+/* Style the color of user-selected text */
+::selection {
     color: var(--user-select-fg-color);
     background: var(--user-select-bg-color);
 }
 
-::selection {
+/* Code for Firefox */
+::-moz-selection {
     color: var(--user-select-fg-color);
     background: var(--user-select-bg-color);
 }
@@ -131,10 +132,28 @@ h1, h2, h3 {
 p {
     margin-top: 0;
 }
+
+/* Style the <hr> tag */
+hr {
+    border: none;
+    border-top: dotted var(--border-default-color) 1.5px;
+}
+
+/* Allow user-select within <article> tags */
+article {
+    --user-select-article: text;
+    -webkit-user-select: var(--user-select-article);
+    -ms-user-select: var(--user-select-article);
+    user-select: var(--user-select-article);
+}
 body {
     margin: 7.5rem auto auto auto;
     padding: 0 1rem;
     max-width: 37rem;
+}
+
+footer {
+    margin: 2rem auto auto auto;
 }</style>
 </head>
 <body>
@@ -144,9 +163,8 @@ body {
     
         <h1>Projects</h1>
     
-</header>
-<nav>
-    
+    <nav>
+        
     
         <a href="/">Home</a>
         
@@ -175,8 +193,9 @@ body {
 
 <br>
 <br>
-</nav>
-<main>  
+    </nav>
+</header>
+<main>
     
 
 
@@ -207,8 +226,11 @@ body {
 
 </main>
 <footer>
+    
+    <hr>
     <p>&copy; 2024 andersamer.com</p>
 </footer>
+    
     
 </body>
 </html>

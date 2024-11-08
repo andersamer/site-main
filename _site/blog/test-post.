@@ -10,12 +10,12 @@
     <style>@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
 
 :root {
+    /* --font-family: Inter, Arial, Helvetica, sans-serif; */
     --font-family: Arial, Helvetica, sans-serif;
     --font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
     --font-scale: 0.85rem;
     --line-height: 1.5;
-
-    /* Disable user-select */
+    /* Maybe disable user-select? */
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -52,19 +52,17 @@
     }
 } */
 
-/* Apply an animation between page navigation */
 @view-transition {
     navigation: auto;
 }
 
-/* Style the color of user-selected text */
-::selection {
+::-moz-selection {
+    /* Code for Firefox */
     color: var(--user-select-fg-color);
     background: var(--user-select-bg-color);
 }
 
-/* Code for Firefox */
-::-moz-selection {
+::selection {
     color: var(--user-select-fg-color);
     background: var(--user-select-bg-color);
 }
@@ -94,28 +92,10 @@ h1, h2, h3 {
 p {
     margin-top: 0;
 }
-
-/* Style the <hr> tag */
-hr {
-    border: none;
-    border-top: dotted var(--border-default-color) 1.5px;
-}
-
-/* Allow user-select within <article> tags */
-article {
-    --user-select-article: text;
-    -webkit-user-select: var(--user-select-article);
-    -ms-user-select: var(--user-select-article);
-    user-select: var(--user-select-article);
-}
 body {
     margin: 7.5rem auto auto auto;
     padding: 0 1rem;
     max-width: 37rem;
-}
-
-footer {
-    margin: 2rem auto auto auto;
 }</style>
 </head>
 <body>
@@ -123,10 +103,11 @@ footer {
     
 <header>
     
-        <h1>Blog</h1>
+        <h1>Test post.</h1>
     
-    <nav>
-        
+</header>
+<nav>
+    
     
         <a href="/">Home</a>
         
@@ -155,19 +136,18 @@ footer {
 
 <br>
 <br>
-    </nav>
-</header>
-<main>
+</nav>
+<main>  
     
+<article>
+    <h2>Test post.</h2>
+<p>“What is a poet? An unhappy man who hides deep anguish in his heart, but whose lips are so formed that when the sigh and cry pass through them, it sounds like lovely music.... And people flock around the poet and say: 'Sing again soon' - that is, 'May new sufferings torment your soul but your lips be fashioned as before, for the cry would only frighten us, but the music, that is blissful.” - Søren Kierkegaard</p>
+<p>Just thought I'd share.</p>
 
-    <a href="/blog/test-post">
-        <h4>Test post</h4>
-    </a>
+</article>
 
 </main>
 <footer>
-    
-    <hr>
     <p>&copy; 2024 andersamer.com</p>
 </footer>
     

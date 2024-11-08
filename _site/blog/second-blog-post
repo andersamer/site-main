@@ -7,8 +7,7 @@
     <title>andersamer.com</title>
     
     
-    <style>/* TODO: Get these fonts locally so you don't have to fetch them from Google */
-@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+    <style>@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
 
 :root {
     /* --font-family: Inter, Arial, Helvetica, sans-serif; */
@@ -150,6 +149,7 @@ body {
 <footer>
     <p>&copy; 2024 andersamer.com</p>
 </footer>
+    
     
 </body>
 </html>
