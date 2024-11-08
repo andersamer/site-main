@@ -10,7 +10,7 @@ export default function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("public");
 
     // Allow for missing extensions11
-    eleventyConfig.configureErrorReporting({ allowMissingExtensions: true });
+    // eleventyConfig.configureErrorReporting({ allowMissingExtensions: true });
 
     // CSS Bundle
     eleventyConfig.addBundle("css");
