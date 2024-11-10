@@ -1,5 +1,8 @@
+{# Include the styling for the cardsWrapper #}
 {%- css %}{% include "public/css/cards.css" %}{% endcss %}
+
 <div class="cardWrapper">
+    {# Data for thte cards is passed into this template by setting the cards variable beforehand #}
     {% for card in cards %}
         <div class="card">
             <a class="card-content" href="{{ card.url }}" target="_blank">

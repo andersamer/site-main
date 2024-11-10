@@ -1,3 +1,10 @@
+{# 
+    This is code that is (hopefully) shared by ALL 
+    pages on the site. This way, the pages can have
+    consistent base styling but are free to change
+    their layout if needed.
+#}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,18 +12,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ site.name }}</title>
+
+    {# Import the "default" styles #}
     {%- css %}{% include "public/css/common.css" %}{% endcss %}
+    
+    {# If the content has a custom stylesheet... #}
     {% if stylesheet %}
+    
+        {# ...copy the custom stylesheet here. #}
         {%- css %}{% include stylesheet %}{% endcss %}
+    
     {% else %}
+
+        {# Otherwise, include the default styling for other pages #}
         {%- css %}{% include "public/css/index.css" %}{% endcss %}
+    
     {% endif %}
+
+    {# Finally, append all of the CSS styles here #}
     <style>{% getBundle "css" %}</style>
+
 </head>
 <body>
     
+    {# Page content! #}
     {{ content | safe }}
-    {# <a style="display: none;" rel="me" href="https://mastodon.social/@andersamer">Mastodon</a> #}
+    
+    {# Mastodon verification :) #}
+    <a style="display: none;" rel="me" href="https://mastodon.social/@andersamer">Mastodon</a>
     
 </body>
 </html>

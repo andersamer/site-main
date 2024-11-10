@@ -15,7 +15,12 @@ export default function (eleventyConfig) {
     // CSS Bundle
     eleventyConfig.addBundle("css");
 
-    // Current year shortcode (Usage: {% currentYear %})
+    // Add a filter to parse dates into yyyy-MM-dd format
+    eleventyConfig.addFilter("normalDate", (dateObj) => {
+        return DateTime.fromJSDate(dateObj, { zone: 'mst' }).toFormat("yyyy-MM-dd");
+    });
+
+    // Current year shortcode. Usage: {% currentYear %}
     eleventyConfig.addShortcode("currentYear", () => `${new Date().getFullYear()}`);
 
     // Set default input and output directories

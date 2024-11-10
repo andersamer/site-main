@@ -1,10 +1,20 @@
+{# Data in nav.items can be found in _data/nav.json #}
 {% for item in nav.items %}
+    
+    {# Don't put the "Home" link if you are already on the home page #}
     {% if not (page.url == "/" and item.name == "Home") %}
+
         <a href="{{ item.url }}">{{ item.name }}</a>
+        
+        {# Put a | between each of the links #}
         {% if not loop.last %}
             <span> | </span>
         {% endif %}
+
     {% endif %}
 {% endfor %}
+
+{# Add some spacing at the bottom #}
+{# TODO: It would probably be better to do this in CSS... #}
 <br>
 <br>

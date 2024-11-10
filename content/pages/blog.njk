@@ -3,9 +3,13 @@ title: "Blog"
 description: "A list of all my posts."
 ---
 
+{# Include the CSS file that styles the post list #}
 {%- css %}{% include "public/css/postList.css" %}{% endcss %}
-{% for post in collections.posts %}
+
+{# List all of the posts in reverse chronological order #}
+{# TODO: add cool styling to the post list #}
+{% for post in collections.posts | reverse %}
     <a href="{{ post.url }}">
         <h4>{{ post.data.title }}</h4>
     </a>
-{% endfor %}
+{%- endfor -%}

@@ -3,18 +3,21 @@ layout: skeleton
 ---
 
 <header>
+    {# Only display a title if one is supplied by the content #}
     {% if title %}
         <h1>{{ title }}</h1>
     {% endif %}
     <nav>
+        {# Throw the nav in there #}
         {% include "nav.njk" %}
     </nav>
 </header>
 <main>
     {{ content | safe }}
 </main>
+
+{# TODO: Make a template for the footer #}
 <footer>
-    {# <br> #}
     <hr>
     <p>&copy; {% currentYear %} andersamer.com</p>
 </footer>
