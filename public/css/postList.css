@@ -1,0 +1,70 @@
+:root {
+    --not-title-margin: 0.3rem;
+    --title-margin-bottom: 0.1rem;
+    --post-gap: 0.5rem;
+    --post-date-font: var(--font-family-monospace);
+}
+
+#postList {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0rem; /* We can take care of this with padding later */
+    margin-bottom: 1rem; /* Have a little bit of space at the bottom of the list */
+}
+
+
+.post {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--border-default-color); /* Apply a border as a little separator */
+    width: 100%; /* Take up the entire width of the postList */
+}
+/* Make sure the last post doesn't have a border on the bottom */
+.post:last-child {
+    border-bottom: 0px;
+}
+
+.post .post-content {
+    display: flex;
+    padding: var(--post-gap); /* Space in between the stuff in the postList! */
+    flex-direction: column; /* Make the stuff inside of the post stack vertically */
+    height: 100%;
+    width: 100%;   
+    text-decoration: none; 
+    color: var(--text-primary);
+}
+/* Undo the default styling of tags within .post-content */
+/* Also, add styles to make text overflow with an ellipsis */
+.post-content > * {
+    margin: 0px;
+    white-space: nowrap;         /* Prevents text from wrapping onto a new line */
+    overflow: hidden;            /* Hides overflowed content */
+    text-overflow: ellipsis;     /* Adds the ellipsis */
+    display: block;              /* Ensures the ellipsis works as expected */
+    max-width: 100%;
+}
+
+.post-title {
+    font-size: 1rem;
+    margin-bottom: var(--title-margin-bottom);
+}
+.post-date {
+    font-size: 0.8rem;
+    font-family: var(--post-date-font);
+    margin-left: var(--not-title-margin); 
+}
+.post-description {
+    margin-left: var(--not-title-margin); 
+    font-size: 0.85rem;
+}
+
+/* TODO: Come up with something to change when you hover over a post */
+/* .post:hover {} */
+
+/* Only highlight the title of the post when you hover over it */
+.post:hover > .post-content > .post-title {
+    color: var(--link-color);
+    text-decoration: underline;
+}

@@ -17,7 +17,7 @@ export default function (eleventyConfig) {
 
     // Add a filter to parse dates into yyyy-MM-dd format
     eleventyConfig.addFilter("normalDate", (dateObj) => {
-        return DateTime.fromJSDate(dateObj, { zone: 'mst' }).toFormat("yyyy-MM-dd");
+        return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat("yyyy-MM-dd");
     });
 
     // Current year shortcode. Usage: {% currentYear %}

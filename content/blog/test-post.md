@@ -1,5 +1,5 @@
 ---
-title: "Test post"
+title: "Test post! "
 description: "You gotta start somehwere I guess."
 date: 2024-11-08
 ---

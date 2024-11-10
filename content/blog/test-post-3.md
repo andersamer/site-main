@@ -1,6 +1,6 @@
 ---
 title: "Test post 3"
-description: "Three times a charm!"
+description: "Third times a charm!"
 date: 2024-11-13
 ---
 
