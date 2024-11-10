@@ -2,17 +2,18 @@
 layout: base
 ---
 
-{# Only display a description if the article has one #}
-{% if description %}
-    <h3><i>{{ description }}</i></h3>
-{% endif %}
-
-{# Post date #}
-<em>{{ date | normalDate }}</em>
-<br>
-<br>
-
 {# Content of the post #}
 <article>
-{{ content | safe }}
+    {# Only display a description if the article has one #}
+    {% if description %}
+        <h3>
+            <i>{{ description }}</i>
+        </h3>
+    {% endif %}
+
+    {# Post date #}
+    <em>{{ date | normalDate }}</em>
+    <br>
+    <br>
+    {{ content | safe }}
 </article>

@@ -3,7 +3,7 @@
 
 :root {
     /* Text settings */
-    --font-family: Arial, Helvetica, sans-serif;
+    --font-family: Inter, Arial, Helvetica, sans-serif;
     --font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
     --font-scale: 0.9rem;
     --line-height: 1.5;
@@ -63,7 +63,7 @@
 
 /* Apply an animation between page navigation */
 @view-transition {
-    navigation: auto; TODO: /* Maybe you can put your own custom animation function here? */
+    navigation: auto; /* TODO: Maybe you can put your own custom animation function here? */
 }
 
 /* Style the color of user-selected text */

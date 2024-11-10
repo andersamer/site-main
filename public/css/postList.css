@@ -1,8 +1,9 @@
 :root {
-    --not-title-margin: 0.3rem;
+    --alt-text-margin: 0.3rem;
+    --alt-text-font: var(--font-family-monospace);
+    --alt-text-color: #6d6d6d;
     --title-margin-bottom: 0.1rem;
     --post-gap: 0.5rem;
-    --post-date-font: var(--font-family-monospace);
 }
 
 #postList {
@@ -51,12 +52,13 @@
     margin-bottom: var(--title-margin-bottom);
 }
 .post-date {
-    font-size: 0.8rem;
-    font-family: var(--post-date-font);
-    margin-left: var(--not-title-margin); 
+    font-size: 0.75rem;
+    font-family: var(--alt-text-font);
+    margin-left: var(--alt-text-margin); 
 }
 .post-description {
-    margin-left: var(--not-title-margin); 
+    margin-left: var(--alt-text-margin); 
+    color: var(--alt-text-color);
     font-size: 0.85rem;
 }
 
