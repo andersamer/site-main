@@ -1,4 +1,5 @@
 import { DateTime } from "luxon";
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight"; // Syntax highlighting plugin
 
 export default function (eleventyConfig) {
 
@@ -14,6 +15,9 @@ export default function (eleventyConfig) {
 
     // CSS Bundle
     eleventyConfig.addBundle("css");
+
+    // Syntax highlighting plugin
+    eleventyConfig.addPlugin(syntaxHighlight);
 
     // Add a filter to parse dates into yyyy-MM-dd format
     eleventyConfig.addFilter("normalDate", (dateObj) => {

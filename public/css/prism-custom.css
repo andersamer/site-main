@@ -1,0 +1,8 @@
+/* These are custom rules for Prism syntax highlighting */
+
+code[class*="language-"],
+pre[class*="language-"] {
+    border-radius: var(--border-radius);
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+}

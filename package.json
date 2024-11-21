@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-  	"build": "npx @11ty/eleventy",
-  	"serve": "npx @11ty/eleventy --serve --port=20081",
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve --port=20081",
     "clean": "rm -rf ./_site"
   },
   "keywords": [],
@@ -13,6 +13,7 @@
   "description": "",
   "type": "module",
   "dependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0"
   }
 }
