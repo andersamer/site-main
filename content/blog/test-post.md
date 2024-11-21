@@ -1,6 +1,6 @@
 ---
 title: "Test post! "
-description: "You gotta start somehwere I guess."
+description: "This is a test post to try out new features and styles."
 date: 2024-11-08
 ---
 

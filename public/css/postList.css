@@ -3,7 +3,7 @@
     --alt-text-font: var(--font-family-monospace);
     --alt-text-color: #6d6d6d;
     --title-margin-bottom: 0.1rem;
-    --post-gap: 0.5rem;
+    --post-gap: 1rem;
 }
 
 #postList {
@@ -29,7 +29,8 @@
 
 .post .post-content {
     display: flex;
-    padding: var(--post-gap); /* Space in between the stuff in the postList! */
+    /* padding: var(--post-gap); Space in between the stuff in the postList! */
+    margin: var(--post-gap); /* Space in between the stuff in the postList! */
     flex-direction: column; /* Make the stuff inside of the post stack vertically */
     height: 100%;
     width: 100%;   
