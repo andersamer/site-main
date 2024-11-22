@@ -12,3 +12,10 @@ article {
 footer {
     margin: 2rem auto auto auto;
 }
+
+img {
+	height: auto;
+	max-width: 100%;
+	width: auto;
+	/* border-radius: var(--border-radius); */
+}

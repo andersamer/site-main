@@ -5,6 +5,7 @@ export default function (eleventyConfig) {
 
     // Add some additional watch targets
     eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpeg}");
+    eleventyConfig.addWatchTarget("public/**/*.{svg,webp,png,jpeg}");
     eleventyConfig.addWatchTarget("public/*");
 
     // Make a passthrough copy of the public/ directory
