@@ -50,7 +50,6 @@
 .post-title {
     align-self: flex-start;
     flex-grow: 1; /* Take up most of the space */
-    color: var(--link-color);
     font-size: 1rem;
     margin: 0px;
 }
@@ -77,6 +76,6 @@
 
 /* Only highlight the title of the post when you hover over it */
 .post:hover > .post-content > .post-title-bar > .post-title {
-    color: var(--link-hover-color);
+    color: var(--link-color);
     text-decoration: underline;
 }
