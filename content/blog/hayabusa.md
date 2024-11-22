@@ -4,9 +4,7 @@ description: "Yippee!! Logs!! 🪵!!"
 date: 2024-11-21
 ---
 
-This is a test!!! `<p> This is a test :)</p>`
-
-This week, I used [Hayabusa](https://github.com/Yamato-Security/hayabusa) to analyze some `Windows Logs`. Hayabusa is a Windows event log timeline generator that uses [Sigma](https://github.com/SigmaHQ/sigma) rules to parse logs. It's a really nifty tool if you are looking to build a sequence of events for an incident in your environment. In addition, Hayabusa a can produce outputs that are friendly with SIEM tools such as Splunk.
+This week, I used [Hayabusa](https://github.com/Yamato-Security/hayabusa) to analyze some Windows Logs. Hayabusa is a Windows event log timeline generator that uses [Sigma](https://github.com/SigmaHQ/sigma) rules to parse logs. It's a really nifty tool if you are looking to build a sequence of events for an incident in your environment. In addition, Hayabusa a can produce outputs that are friendly with SIEM tools such as Splunk.
 
 This post walks you through Hayabusa's basic features.
 
@@ -41,11 +39,8 @@ Yamato Security (https://github.com/Yamato-Security/hayabusa - @SecurityYamato)
 
 You have a couple options here.
 
-First, you could grab your own Windows logs from your own machine by copying all of the files at this filepath:
-
-```txt
-C:\WINDOWS\system32\config\
-```
+<!-- First, you could grab your own Windows logs from your own machine by copying all of the files at this filepath: -->
+First, you could grab your own Windows logs from your own machine by copying all of the files at `C:\WINDOWS\system32\config\`.
 
 Or, if you don't have access to a Windows machine/don't want to do that (or you want some *spicier* logs), you can head over to [this](https://github.com/Yamato-Security/hayabusa-sample-evtx/) git repo and check out some of Hayabusa's sample logs. I ended up choosing [the EVTX_full_APT_attack_steps](https://github.com/Yamato-Security/hayabusa-sample-evtx/tree/main/EVTX-to-MITRE-Attack/EVTX_full_APT_attack_steps) because they map the logs to steps in the [MITRE ATT&CK framework](https://attack.mitre.org/).
 
