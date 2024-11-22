@@ -7,10 +7,10 @@ stylesheet: "public/css/post.css"
 <article>
 
     {# Only display a description if the article has one #}
-    {% if description %}
+    {# {% if description %}
         <em class="post-description">{{ description }}</em>
         <br>
-    {% endif %}
+    {% endif %} #}
     {# Post date #}
     <strong>Date:</strong> <span class="post-date">{{ date | normalDate }}</span>
     <br>
