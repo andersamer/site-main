@@ -4,7 +4,9 @@ description: "Yippee!! Logs!! 🪵!!"
 date: 2024-11-21
 ---
 
-This week, I used [Hayabusa](https://github.com/Yamato-Security/hayabusa) to analyze some Windows Logs. Hayabusa is a Windows event log timeline generator that uses [Sigma](https://github.com/SigmaHQ/sigma) rules to parse logs. It's a really nifty tool if you are looking to build a sequence of events for an incident in your environment. In addition, Hayabusa a can produce outputs that are friendly with SIEM tools such as Splunk.
+This is a test!!! `<p> This is a test :)</p>`
+
+This week, I used [Hayabusa](https://github.com/Yamato-Security/hayabusa) to analyze some `Windows Logs`. Hayabusa is a Windows event log timeline generator that uses [Sigma](https://github.com/SigmaHQ/sigma) rules to parse logs. It's a really nifty tool if you are looking to build a sequence of events for an incident in your environment. In addition, Hayabusa a can produce outputs that are friendly with SIEM tools such as Splunk.
 
 This post walks you through Hayabusa's basic features.
 

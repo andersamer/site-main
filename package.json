@@ -14,6 +14,8 @@
   "type": "module",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0"
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "markdown-it": "^14.1.0",
+    "slugify": "^1.6.6"
   }
 }

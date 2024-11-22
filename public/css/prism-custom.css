@@ -6,3 +6,8 @@ pre[class*="language-"] {
     font-size: 0.8rem;
     margin-bottom: 1.5rem;
 }
+
+p > code[class*="language-"] {
+    padding: 0.3rem 0.4rem;
+    margin: auto;
+}
