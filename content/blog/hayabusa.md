@@ -1,5 +1,5 @@
 ---
-title: "Using Hayabusa to analyze Windows logs"
+title: "Analayzing Windows logs with Hayabusa"
 description: "Yippee!! Logs!! 🪵!!"
 date: 2024-11-21
 ---

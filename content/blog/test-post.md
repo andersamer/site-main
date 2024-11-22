@@ -1,5 +1,5 @@
 ---
-title: "Test post! "
+title: "Test post! Test post! Test post! Test post! Test post! Test post! Test post! Test post! Test post! Test post! Test post! Test post! Test post! Test post! Test post! Test post! Test post! "
 description: "This is a test post to try out new features and styles."
 date: 2024-11-08
 ---

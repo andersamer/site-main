@@ -1,6 +1,4 @@
 :root {
-    --alt-text-margin: 0.3rem;
-    --alt-text-font: var(--font-family-monospace);
     --alt-text-color: #6d6d6d;
     --title-margin-bottom: 0.1rem;
     --post-gap: 1rem;
@@ -15,7 +13,6 @@
     margin-bottom: 1rem; /* Have a little bit of space at the bottom of the list */
 }
 
-
 .post {
     display: flex;
     flex-direction: column;
@@ -27,47 +24,52 @@
     border-bottom: 0px;
 }
 
+/* Undo the default styling of tags within .post-content */
 .post .post-content {
-    display: flex;
-    /* padding: var(--post-gap); Space in between the stuff in the postList! */
-    margin: var(--post-gap); /* Space in between the stuff in the postList! */
-    flex-direction: column; /* Make the stuff inside of the post stack vertically */
+    padding: var(--post-gap); /* Space in between the stuff in the postList! */
     height: 100%;
     width: 100%;   
     text-decoration: none; 
     color: var(--text-primary);
 }
-/* Undo the default styling of tags within .post-content */
-/* Also, add styles to make text overflow with an ellipsis */
-.post-content > * {
+
+/* TODO: I probably don't need this many wrappers... */
+.post-title-bar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
     margin: 0px;
-    white-space: nowrap;         /* Prevents text from wrapping onto a new line */
-    overflow: hidden;            /* Hides overflowed content */
-    text-overflow: ellipsis;     /* Adds the ellipsis */
-    display: block;              /* Ensures the ellipsis works as expected */
-    max-width: 100%;
 }
 
 .post-title {
+    align-self: flex-start;
+    flex-grow: 1; /* Take up most of the space */
     font-size: 1rem;
-    margin-bottom: var(--title-margin-bottom);
+    margin: 0px;
 }
 .post-date {
+    align-self: flex-end; /* Justify to the right side of the page */
+    flex-shrink: 0; /* Don't shrink at all */
     font-size: 0.75rem;
-    font-family: var(--alt-text-font);
-    margin-left: var(--alt-text-margin); 
+    font-family: var(--font-family-monospace);
+    color: var(--alt-text-color);
 }
 .post-description {
-    margin-left: var(--alt-text-margin); 
-    color: var(--alt-text-color);
     font-size: 0.85rem;
+}
+
+.post-title, .post-description {
+    /* Overflow with an elipsis */
+    white-space: nowrap;         /* Prevents text from wrapping onto a new line */
+    overflow: hidden;            /* Hides overflowed content */
+    text-overflow: ellipsis;     /* Adds the ellipsis */
 }
 
 /* TODO: Come up with something to change when you hover over a post */
 /* .post:hover {} */
 
 /* Only highlight the title of the post when you hover over it */
-.post:hover > .post-content > .post-title {
+.post:hover > .post-content > .post-title-bar > .post-title {
     color: var(--link-color);
     text-decoration: underline;
 }

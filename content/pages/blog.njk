@@ -12,8 +12,7 @@ description: "A list of all my posts."
     {% for post in collections.posts | reverse %}
         <div class="post">
             <a class="post-content" href="{{ post.url }}">
-                <h4 class="post-title">{{ post.data.title }}</h4>
-                <span class="post-date">{{ post.data.date | normalDate }}</span>
+                <span class="post-title-bar"><h4 class="post-title">{{ post.data.title }}</h4><span class="post-date">{{ post.data.date | normalDate }}</span></span>
                 <span class="post-description">{{ post.data.description }}</span>
             </a>
         </div>
