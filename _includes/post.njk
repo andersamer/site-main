@@ -5,16 +5,15 @@ stylesheet: "public/css/post.css"
 
 {# Content of the post #}
 <article>
+
     {# Only display a description if the article has one #}
     {% if description %}
-        <h4>
-            <i>{{ description }}</i>
-        </h4>
+        <em class="post-description">{{ description }}</em>
+        <br>
     {% endif %}
-
     {# Post date #}
-    <em>{{ date | normalDate }}</em>
+    <strong>Date:</strong> <span class="post-date">{{ date | normalDate }}</span>
     <br>
-    <br>
+    <hr>
     {{ content | safe }}
 </article>

@@ -1,3 +1,7 @@
+:root {
+    --alt-text-color: #6d6d6d;
+}
+
 body {
     margin: var(--post-margin-top) auto auto auto;
     padding: 0 1rem;
@@ -6,7 +10,7 @@ body {
 }
 
 article {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 footer {
@@ -18,4 +22,13 @@ img {
 	max-width: 100%;
 	width: auto;
 	/* border-radius: var(--border-radius); */
+}
+
+.post-date, .post-description {
+    color: var(--alt-text-color);
+    font-size: 0.75rem;
+}
+
+.post-date {
+    font-family: var(--font-family-monospace);
 }
