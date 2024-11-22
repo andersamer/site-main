@@ -27,10 +27,16 @@
 /* Undo the default styling of tags within .post-content */
 .post .post-content {
     padding: var(--post-gap); /* Space in between the stuff in the postList! */
-    height: 100%;
-    width: 100%;   
+    /* height: 100%; */
+    /* width: 100%;    */
     text-decoration: none; 
     color: var(--text-primary);
+}
+
+/* Stack the title bar and description on top of each other */
+.post-content {
+    display: flex;
+    flex-direction: column;
 }
 
 /* TODO: I probably don't need this many wrappers... */
