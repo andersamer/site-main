@@ -1,5 +1,10 @@
 [
     {
+        "title": "site-main",
+        "text": "The code for this site! :)",
+        "url": "https://github.com/andersamer/site-main"
+    },
+    {
         "title": "cloudflare-autoDUC",
         "text": "A script that acts as an automatic DNS Update Client for Cloudflare DNS.",
         "url": "https://github.com/andersamer/cloudflare-autoDUC"
