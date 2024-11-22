@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* Apply an animation between page navigation */
+@view-transition {
+    navigation: auto; /* TODO: Maybe you can put your own custom animation function here? */
+}
+
+* {
+	box-sizing: border-box;
+}
+a, a:visited {
+	text-decoration: dotted underline 1px; 
+	color: #0676d1; 
+}
+body {
+	/* font-family: Georgia, Serif;  */
+	font-family: Inter, sans-serif; 
+	font-size: 0.9rem;
+	line-height: 1.5; 
+	margin: 0 auto;
+	max-width: 45rem;
+	padding: 0 15px;
+}
+hr {
+	background-color: grey;
+	border: 0;
+	height: 1px;
+	margin: 2rem 0;
+}
+nav {
+	margin: 2rem 0 0;
+}
+main {
+	hyphens: auto;
+}
+main p {
+	margin: 1rem;
+}
+h1,h2,h3,h4 {
+	margin: 2rem 0 0;
+}
+h1:first-of-type {
+	/* font-family: Spectral, Georgia, serif; */
+	font-family: Inter, sans-serif; 
+	margin-bottom: 0px;
+}
+h1 {
+	margin-bottom: 0.5rem;
+}
+h1 + p {
+	margin: 0 0 1rem 0;
+}
+span.created {
+	display: block;
+	margin: 4px 15px;
+}
+span.created-date {
+	font-size: 0.9rem;
+}
+img {
+	height: auto;
+	max-width: 100%;
+	width: auto;
+	border-radius: 0.2rem;
+}
+blockquote {
+	background-color: linen;
+	border-left: 4px solid lightcoral;
+	margin: 2rem 0;
+	padding: 10px;
+}
+blockquote p {
+	margin: 0;
+}
+figure {
+	margin: 2rem 0;
+}
+code {
+	font-size: 0.7rem;
+	background: #eee;
+	padding: 0.2rem;
+	tab-size: 4;
+	border-radius: 0.2rem;
+}
+pre {
+	background: #eee;
+	border-radius: 0.4rem;
+}
+pre code {
+	background: none;
+	display: block;
+	overflow-x: auto;
+	padding: 0.6rem 0.8rem;
+}
+table {
+	border-collapse: collapse;
+	margin: 2rem 0;
+	text-align: left;
+	width: 100%;
+}
+tr {
+	border-bottom: 1px solid lightgrey;
+}
+tr:nth-of-type(odd) td {
+	background-color: #f8f8f8;
+}
+th,td {
+	padding: 6px;
+}
+footer {
+	border-top: 1px dashed grey;
+	margin: 2rem 0;
+	padding: 1rem 15px;
+}
+.tinyText, figcaption {
+	color: black;
+	font-size: 0.7rem;
+	font-style: italic;
+	margin: -1rem 1rem 1rem 1.5rem;
+}
+.dark-mode {
+	background-color: #282828;
+    color: white;
+}
+.dark-code {
+	background-color: #3b3b3b;
+	color: white;
+}
+.dark-blockquote {
+	background-color: #3e2020;
+	border-left: 4px solid lightcoral;
+}
+.dark-a, .dark-a:visited {
+	color: #00bcd4;	
+}
+.dark-figcaption {
+	color: white;
+}
+.magicCircle {
+	cursor: pointer;
+	user-select: none;
+}
+.footer-text {
+	margin: 1rem 0 1rem;
+}
+.lilheart {
+	font-size: 1.1rem;
+}
