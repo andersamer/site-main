@@ -8,15 +8,5 @@
         "title": "cloudflare-autoDUC",
         "text": "A script that acts as an automatic DNS Update Client for Cloudflare DNS.",
         "url": "https://github.com/andersamer/cloudflare-autoDUC"
-    },
-    {
-        "title": "barf-backup",
-        "text": "A script that stages and commits changes to a git repo of your choice.",
-        "url": "https://github.com/andersamer/barf-backup"
-    },
-    {
-        "title": "yourweather",
-        "text": "A simple implementation of OpenWeather's API from a few years back.",
-        "url": "https://github.com/andersamer/yourweather"
     }
 ]
