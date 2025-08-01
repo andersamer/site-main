@@ -69,7 +69,7 @@ After a few google searches, I stumbled upon [this StackOverflow answer](https:/
 
 I initially used [the official Waveshare documentation](https://www.waveshare.com/wiki/2.13inch_e-Paper_HAT_Manual#Working_With_Raspberry_Pi) to get started and install dependencies, but I ended up taking some liberties along the way.
 
-## Enabling the SPI Interface
+# Enabling the SPI Interface
 
 Enable the SPI interface via `raspi-config`. Verify that it is enabled using the following command:
 
@@ -78,7 +78,7 @@ cat /boot/firmware/config.txt | grep spi
 # This should output "dtparam=spi=on"
 ```
 
-## Repo Cloning & Setup
+# Repo Cloning & Setup
 
 Clone the Waveshare repository for the display:
 
@@ -98,8 +98,6 @@ cd haiku-bot
 python -m venv venv
 source venv/bin/activate
 ```
-
-## Dependencies
 
 I spent a bunch of time figuring which dependencies you actually need, since the [official documentation](https://www.waveshare.com/wiki/2.13inch_e-Paper_HAT_Manual#Python) and [the guide that I was following](http://johnj.com/posts/e-paper-rpi-display/) list different dependencies. Here is what worked for me (`lgpio` proved to be the missing pieces for me):
 
