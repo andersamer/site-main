@@ -8,5 +8,10 @@
         "title": "cloudflare-autoDUC",
         "text": "A script that acts as an automatic DNS Update Client for Cloudflare DNS.",
         "url": "https://github.com/andersamer/cloudflare-autoDUC"
+    },
+    {
+        "title": "tars-display",
+        "text": "Waveshare 2.13\" e-paper display implementation that (currently) pings the Spotify API and displays the track you are currently listening to",
+        "url": "https://github.com/andersamer/tars-display"
     }
 ]

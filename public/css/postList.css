@@ -1,9 +1,3 @@
-:root {
-    --alt-text-color: #6d6d6d;
-    --title-margin-bottom: 0.1rem;
-    --post-gap: 1rem;
-}
-
 #postList {
     display: flex;
     flex-flow: column;
@@ -58,7 +52,7 @@
     flex-shrink: 0; /* Don't shrink at all */
     font-size: 0.75rem;
     font-family: var(--font-family-monospace);
-    color: var(--alt-text-color);
+    color: var(--post-alt-text-color);
 }
 .post-description {
     font-size: 0.85rem;

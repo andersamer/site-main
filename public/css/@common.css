@@ -1,21 +1,6 @@
 /* TODO: Download this font locally so you won't have to fetch it */
 @import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
 
-:root {
-    /* Text settings */
-    --font-family: Inter, Arial, Helvetica, sans-serif;
-    --font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
-    --font-scale: 0.9rem;
-    --line-height: 1.5;
-
-    --border-radius: 0.2rem;
-
-    /* Disable user-select */
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
 /* Set some baseline variables */
 :root {
 
@@ -25,7 +10,7 @@
     
     --page-margin-top: 5.5rem; 
     --post-margin-top: 2.5rem;
-    --page-max-width: 37rem;
+    --page-max-width: 40rem;
     --bg-primary: white;
 
     /* Border settings */
@@ -43,6 +28,25 @@
     --shadow-color: rgba(0, 0, 0, 0.16) 0px 2px 3px;
     --user-select-fg-color: white;
     --user-select-bg-color: #3a3939; 
+
+    /* Post list styling */
+    --post-alt-text-color: #6d6d6d;
+    --post-title-margin-bottom: 0.1rem;
+    --post-gap: 1rem;
+
+    /* Code block styling */
+    /* Text settings */
+    --font-family: Inter, Arial, Helvetica, sans-serif;
+    --font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+    --font-scale: 0.9rem;
+    --line-height: 1.5;
+
+    --border-radius: 0.2rem;
+
+    /* Disable user-select */
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 
 }
 
