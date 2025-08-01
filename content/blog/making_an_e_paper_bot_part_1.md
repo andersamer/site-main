@@ -12,7 +12,7 @@ After gathering these materials, I... let them sit on my desk for forever. It wa
 
 I named the project after [Tars from Interstellar](https://interstellarfilm.fandom.com/wiki/TARS), despite the egregious disparity between the actual TARS and my little bot you see here.Here is the result (it hangs up now and then, but it works pretty consistently): 
 
-![spotify bot]()
+![spotify bot](/public/img/spotify_bot.jpg)
 
 In this post I'm going to cover the setup of the actual Raspberry Pi and screen, since this was actually the hardest part. My approach was largely adapted from [this very helpful blog post](http://johnj.com/posts/e-paper-rpi-display/) on the same topic.
 
