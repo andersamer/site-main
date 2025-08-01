@@ -4,12 +4,12 @@
 code[class*="language-"],
 pre[class*="language-"] {
     border-radius: var(--border-radius); /* Nice litle border radius */
-    font-size: 0.8rem; /* Slightly smaller font */
+    font-size: 0.85rem; /* Slightly smaller font */
     margin-bottom: 1rem; /* Put some space after the code block */
 }
 
 /* Add some light padding to inline code blocks */
 p > code[class*="language-"] {
-    padding: 0.2rem 0.4rem; 
+    padding: 0.5rem 0.4rem; 
     margin: auto; /* We don't need the space after the code block here */
 }

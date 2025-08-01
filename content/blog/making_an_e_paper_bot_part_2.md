@@ -27,11 +27,11 @@ In short, I just wanted to use less brain power later one once I was handling Sp
 
 The code for this project can be found [here](https://github.com/andersamer/tars-display/tree/main). In short, I ended up making two classes:
 
-* `EPDController` - This class takes care of interaction with the screen itself. It's basically a fancy wrapper for functions that display image buffers and control the power state of the display
+* [`EPDController`](https://github.com/andersamer/tars-display/blob/main/lib/EPDController.py) - This class takes care of interaction with the screen itself. It's basically a fancy wrapper for functions that display image buffers and control the power state of the display
 
-* `EPDDrawer` - This class is basically an abstraction of [Pillow](https://pillow.readthedocs.io/en/stable/). It draws images, shapes, and text on an image that is then sent to the display. It also handles fonts.
+* [`EPDDrawer`](https://github.com/andersamer/tars-display/blob/main/lib/EPDDrawer.py) - This class is basically an abstraction of [Pillow](https://pillow.readthedocs.io/en/stable/). It draws images, shapes, and text on an image that is then sent to the display. It also handles fonts.
 
-In short, `EPDDrawer` creates the image and hands it off to `EPDController` so that it can be displayd.
+In short, [`EPDDrawer`](https://github.com/andersamer/tars-display/blob/main/lib/EPDDrawer.py) creates the image and hands it off to [`EPDController`](https://github.com/andersamer/tars-display/blob/main/lib/EPDController.py) so that it can be displayd.
 
 # EPDController
 
@@ -89,7 +89,7 @@ self.default_font = self.font_libre_baskerville16
 
 Next, it was time to create a text-wrapping function. Not only did my text have to wrap when it hit a certain width, but the font size had to be adjusted to accomodate for super long strings.
 
-I ended up measuring both the width and height of the text character by character by creating a new instance of the `bbox` class each time a character was added. This allowed me to know when to break lines and when to make font size bigger/smaller.
+I ended up measuring both the width and height of the text character by character by creating a new instance of the [`ImageDraw.textbbox`](https://pillow.readthedocs.io/en/latest/reference/ImageDraw.html#PIL.ImageDraw.ImageDraw.textbbox) class each time a character was added. This allowed me to know when to break lines and when to make font size bigger/smaller.
 
 It took a few iterations, but I eventually got it:
 
