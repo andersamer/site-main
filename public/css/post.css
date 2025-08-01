@@ -22,7 +22,7 @@ img {
 
 .post-date, .post-description {
     color: var(--alt-text-color);
-    font-size: 0.75rem;
+    font-size: 0.9rem;
 }
 
 .post-date {
