@@ -105,7 +105,6 @@ I spent a bunch of time figuring which dependencies you actually need, since the
 pip install spidev gpiozero pillow lgpio
 ```
 
-
 # Cleaning up the code
 
 Upon cloning the repo, you'll likely notice that the code is super disorganized and confusing. If your dependencies are installed properly, however, the `epd_2in13_V4_test.py` script should work for the 2.13" display.

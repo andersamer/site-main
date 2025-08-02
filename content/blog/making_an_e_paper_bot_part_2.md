@@ -33,7 +33,7 @@ The code for this project can be found [here](https://github.com/andersamer/tars
 
 In short, [`EPDDrawer`](https://github.com/andersamer/tars-display/blob/main/lib/EPDDrawer.py) creates the image and hands it off to [`EPDController`](https://github.com/andersamer/tars-display/blob/main/lib/EPDController.py) so that it can be displayd.
 
-# EPDController
+## EPDController
 
 I'm not really gonna go into this code because it's really simple and boring. The most important thing that this class does is adjust the orientation of the display so that I can set it on my desk with the power cable up instead of down:
 
@@ -63,7 +63,7 @@ def clear(self, color=0xff):
         self._clear()
 ```
 
-# EPDDrawer
+## EPDDrawer
 
 There were two crucial parts of my design for this project:
 
